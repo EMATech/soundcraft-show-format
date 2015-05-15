@@ -1,0 +1,74 @@
+<IOModuleDatabase>
+  <PhysicalIODeviceManager>
+    <PhysicalIODevice shortName="MIC" description="MIC" serialNo="39030" versionNo="256" position="255" expansionCardType="0" moduleType="1" internalModuleType="1">
+      <InternalAudioDevice shortName="" description="" serialNo="4660" audioDeviceType="1">
+        <AudioIOModuleRangeManager>
+          <AudioIOModuleRange logicalStart="0" logicalEnd="15" IOmoduleType="1" logicalIOType="1" discovered="1" inShow="1" eAvailable="1" />
+        </AudioIOModuleRangeManager>
+      </InternalAudioDevice>
+    </PhysicalIODevice>
+    <PhysicalIODevice shortName="MIC" description="MIC" serialNo="39030" versionNo="256" position="255" expansionCardType="0" moduleType="1" internalModuleType="1">
+      <InternalAudioDevice shortName="" description="" serialNo="4660" audioDeviceType="1">
+        <AudioIOModuleRangeManager>
+          <AudioIOModuleRange logicalStart="16" logicalEnd="63" IOmoduleType="1" logicalIOType="1" discovered="0" inShow="1" eAvailable="0" />
+        </AudioIOModuleRangeManager>
+      </InternalAudioDevice>
+    </PhysicalIODevice>
+    <PhysicalIODevice shortName="LINE IN" description="Line Input Module" serialNo="39030" versionNo="256" position="255" expansionCardType="0" moduleType="1" internalModuleType="2">
+      <InternalAudioDevice shortName="" description="" serialNo="4660" audioDeviceType="1">
+        <AudioIOModuleRangeManager>
+          <AudioIOModuleRange logicalStart="0" logicalEnd="3" IOmoduleType="1" logicalIOType="2" discovered="1" inShow="1" eAvailable="1" />
+        </AudioIOModuleRangeManager>
+      </InternalAudioDevice>
+    </PhysicalIODevice>
+    <PhysicalIODevice shortName="LINE IN" description="Line Input Module" serialNo="39030" versionNo="256" position="255" expansionCardType="0" moduleType="1" internalModuleType="2">
+      <InternalAudioDevice shortName="" description="" serialNo="4660" audioDeviceType="1">
+        <AudioIOModuleRangeManager>
+          <AudioIOModuleRange logicalStart="4" logicalEnd="7" IOmoduleType="1" logicalIOType="2" discovered="0" inShow="1" eAvailable="0" />
+        </AudioIOModuleRangeManager>
+      </InternalAudioDevice>
+    </PhysicalIODevice>
+    <PhysicalIODevice shortName="LEX-RT" description="Lexicon Return Module" serialNo="39030" versionNo="256" position="255" expansionCardType="0" moduleType="1" internalModuleType="2">
+      <InternalAudioDevice shortName="" description="" serialNo="4660" audioDeviceType="1">
+        <AudioIOModuleRangeManager>
+          <AudioIOModuleRange logicalStart="0" logicalEnd="7" IOmoduleType="1" logicalIOType="3" discovered="1" inShow="1" eAvailable="1" />
+        </AudioIOModuleRangeManager>
+      </InternalAudioDevice>
+    </PhysicalIODevice>
+    <PhysicalIODevice shortName="AES In" description="AES Input Module" serialNo="39030" versionNo="256" position="255" expansionCardType="0" moduleType="1" internalModuleType="5">
+      <InternalAudioDevice shortName="" description="" serialNo="4660" audioDeviceType="1">
+        <AudioIOModuleRangeManager>
+          <AudioIOModuleRange logicalStart="0" logicalEnd="1" IOmoduleType="1" logicalIOType="5" discovered="1" inShow="1" eAvailable="1" />
+        </AudioIOModuleRangeManager>
+      </InternalAudioDevice>
+    </PhysicalIODevice>
+    <PhysicalIODevice shortName="O/P" description="GRAUX Output Module" serialNo="39030" versionNo="256" position="255" expansionCardType="0" moduleType="1" internalModuleType="3">
+      <InternalAudioDevice shortName="" description="" serialNo="4660" audioDeviceType="1">
+        <AudioIOModuleRangeManager>
+          <AudioIOModuleRange logicalStart="0" logicalEnd="15" IOmoduleType="1" logicalIOType="8" discovered="1" inShow="1" eAvailable="1" />
+        </AudioIOModuleRangeManager>
+      </InternalAudioDevice>
+    </PhysicalIODevice>
+    <PhysicalIODevice shortName="AES Out" description="AES Output Module" serialNo="39030" versionNo="256" position="255" expansionCardType="0" moduleType="1" internalModuleType="6">
+      <InternalAudioDevice shortName="" description="" serialNo="4660" audioDeviceType="1">
+        <AudioIOModuleRangeManager>
+          <AudioIOModuleRange logicalStart="0" logicalEnd="1" IOmoduleType="1" logicalIOType="17" discovered="1" inShow="1" eAvailable="1" />
+        </AudioIOModuleRangeManager>
+      </InternalAudioDevice>
+    </PhysicalIODevice>
+    <PhysicalIODevice shortName="MULTI DIGITAL IN/OUT CARD" description="USB/1394 [1-32], ADAT [33-40]" serialNo="39030" versionNo="256" position="0" expansionCardType="2" moduleType="2" internalModuleType="0">
+      <UnknownExternalAudioDevice shortName="" description="" serialNo="4660" audioDeviceType="5">
+        <AudioIOModuleRangeManager>
+          <AudioIOModuleRange logicalStart="0" logicalEnd="7" IOmoduleType="2" logicalIOType="4" discovered="1" inShow="1" eAvailable="1" />
+          <AudioIOModuleRange logicalStart="0" logicalEnd="7" IOmoduleType="2" logicalIOType="12" discovered="1" inShow="1" eAvailable="1" />
+          <AudioIOModuleRange logicalStart="8" logicalEnd="15" IOmoduleType="2" logicalIOType="4" discovered="1" inShow="1" eAvailable="1" />
+          <AudioIOModuleRange logicalStart="8" logicalEnd="15" IOmoduleType="2" logicalIOType="12" discovered="1" inShow="1" eAvailable="1" />
+          <AudioIOModuleRange logicalStart="16" logicalEnd="31" IOmoduleType="2" logicalIOType="4" discovered="1" inShow="1" eAvailable="1" />
+          <AudioIOModuleRange logicalStart="16" logicalEnd="31" IOmoduleType="2" logicalIOType="12" discovered="1" inShow="1" eAvailable="1" />
+          <AudioIOModuleRange logicalStart="32" logicalEnd="39" IOmoduleType="2" logicalIOType="4" discovered="1" inShow="1" eAvailable="1" />
+          <AudioIOModuleRange logicalStart="32" logicalEnd="39" IOmoduleType="2" logicalIOType="12" discovered="1" inShow="1" eAvailable="1" />
+        </AudioIOModuleRangeManager>
+      </UnknownExternalAudioDevice>
+    </PhysicalIODevice>
+  </PhysicalIODeviceManager>
+</IOModuleDatabase>

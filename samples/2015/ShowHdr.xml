@@ -1,0 +1,10 @@
+<Show name="TTS 2015" activeCueList="1" notes="" deskType="112" versionMajor="3" versionMinor="1" build="9">
+  <Snapshot snapshotId="4" name="Unnamed Snapshot 4" notes="" />
+  <Snapshot snapshotId="5" name="Unnamed Snapshot 5" notes="" />
+  <CueList cuelistId="1" name="Cue list 1" nextCueId="107" notes="">
+    <Cue cueId="103" snapshotId="4" name="REPE 201502" notes="" midiProgChange="0" midiChannel="0" midiProgNumber="1" midiRxChannel="0" midiRxProgChange="16" midiRxProgNumber="1" hiQVenueRecall="0" hiQVenueNumber="1" cueActive="1" cueLocked="0" dmxFadeTime="0" audioRecall="1" dmxRecall="0">
+    </Cue>
+    <Cue cueId="104" snapshotId="5" name="REC 201502" notes="" midiProgChange="0" midiChannel="0" midiProgNumber="1" midiRxChannel="0" midiRxProgChange="16" midiRxProgNumber="1" hiQVenueRecall="0" hiQVenueNumber="1" cueActive="1" cueLocked="0" dmxFadeTime="0" audioRecall="1" dmxRecall="1">
+    </Cue>
+  </CueList>
+</Show>
