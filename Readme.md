@@ -1,5 +1,5 @@
 Soundcraft Si show file format
---------------------------------------
+------------------------------
 
 ## Extension
 .SSH
