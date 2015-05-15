@@ -1,18 +1,33 @@
-Notes
-=====
-
 Soundcraft Si Session Show file format
 --------------------------------------
 
-### Extension
+## Extension
 .SSH
 
-### Format
+Session show? Soundcraft Show?
+
+## Format
 Actual format is XML.
 
 Unfortunately it's full of blobs but don't worry!
 
-### Blobs
+## XML Sections
+
+### Device
+
+### NODE
+
+### Show
+- name: (str) This is a cleartext attribute with the show name! Yay :)
+
+### MHxDFile
+- name: (str) Looks like a path and filename.
+    - "\._ $SHOWS\Show_0\filename.ext"
+- checksum: (int) Undetermined checksum. (Yet!)
+- datalength: (int) Size of the uncompressed data blob in bytes. (Except it's wrong for the SS_xxxxx.dat file).
+- content: blob
+
+## Blobs
 All blobs seem to start with the same header: 'eJz'.
 
 Looks like some kind of data encoding or compression.
@@ -21,32 +36,24 @@ Base64? Most likely. The resulting files looks encoded or compressed though…
 
 78 9C header. Doesn't that look like zlib? \o/
 
-### XML Sections
+### Recipes
 
-#### Show
+#### Decode & Extract
+```sh
+< "XML MHxDFile entity content in a file" base64 -d | zlib-flate -uncompress > file
+```
 
-##### Name
-This is a cleartext attribute with the show name! Yay :)
+#### Compress & Encode
+```sh
+< file zlib-flate -compress | base64 -w0 > "XML MHxDFile entity content in a file"
+```
 
-#### ShowHdr.xml
+## Files
+
+### ShowHdr.xml
 The general show informations as this section is always unique.
 
-#### IOModules.xml
-Looks like the routing informations for the Show.
-
-#### SS_xxxxx.dat
-Purpose unknown. Certainly the current state since it's restored on show loading.
-
-#### SS_x.dat
-x = snaphotId from ShowHdr.xml
-
-Looks like the cues. The number of sections match the number of cues of the show.
-
-### Files
-
-#### ShowHdr.xml
-
-##### Show
+#### Show
 - Name: (str) The show name.
 - activeCueList: (1) The cueListId of the currently active cueList.
 - notes: (str) Does not seem to be exposed on the mixing desk!
@@ -60,13 +67,13 @@ Looks like the cues. The number of sections match the number of cues of the show
 - build: (int) The build version number of the firmware.
     - 9
 
-##### Snapshot
+#### Snapshot
 - snapshotId: (int)
 - name: (str) "Unamed Snapshot 4" Does not seem to be exposed on the mixing desk!
 - notes: (str) Does not seem to be exposed on the mixing desk!
     - ""
 
-##### Cue
+#### Cue
 - cueId: (int) An ID for the cue.
 - snapshotId: (int) Binds the cue to a snapshot.
 - name: (str) The name of the cue.
@@ -86,13 +93,14 @@ Looks like the cues. The number of sections match the number of cues of the show
 - audioRecall: (bool as int?) Certainly for the performer model to allow recalling only audio.
 - dmxRecall: (bool as int?) Certainly for the performer model to allow recalling only DMX.
 
-#### IOModules.xml
+### IOModules.xml
+Looks like the routing informations for the Show.
 
-##### IOModuleDatabase
+#### IOModuleDatabase
 
-##### PhysicalIODeviceManager
+#### PhysicalIODeviceManager
 
-##### PhysicalIODevice
+#### PhysicalIODevice
 - shortName: (str) The input or output name.
 - description (str) Long description.
 - serialNo: (int)
@@ -116,7 +124,7 @@ Looks like the cues. The number of sections match the number of cues of the show
     - 5 for AES in.
     - 6 for AES out.
 
-##### InternalAudioDevice
+#### InternalAudioDevice
 - shortName: (str)
     - "" on all.
 - description: (str)
@@ -127,9 +135,9 @@ Looks like the cues. The number of sections match the number of cues of the show
     - 1 for all internal.
     - 5 for my MULTI DIGITAL card.
 
-##### AudioIOModuleRangeManager
+#### AudioIOModuleRangeManager
 
-##### AudioIOModuleRange
+#### AudioIOModuleRange
 - logicalStart: (int) The I/O position start.
 - logicalEnd: (int) The I/O position end.
 - IOmoduleType: (int)
@@ -152,10 +160,18 @@ Looks like the cues. The number of sections match the number of cues of the show
     - 1 for physical I/O.
     - 0 for inexistant I/O (MIC 16 to 63).
 
-##### UnknownExternalAudioDevice
+#### UnknownExternalAudioDevice
 Same as InternalAudioDevice for my MULTI DIGITAL card.
 
-#### *.dat files
+### \*.dat files
 Looks like memory dumps. 180kB. Very similar content.
 
-Start with "Snapshot"
+Start with "Snapshot" header.
+
+#### SS_xxxxx.dat
+Purpose unknown. Certainly the current state since it's restored on show loading.
+
+#### SS_x.dat
+x = snaphotId from ShowHdr.xml
+
+Looks like the cues. The number of sections match the number of cues of the show.
