@@ -1,10 +1,10 @@
-Soundcraft Si Session Show file format
+Soundcraft Si show file format
 --------------------------------------
 
 ## Extension
 .SSH
 
-Session show? Soundcraft Show?
+Soundcraft SHow?
 
 ## Format
 Actual format is XML.
