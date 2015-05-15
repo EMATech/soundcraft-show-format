@@ -24,6 +24,7 @@ Unfortunately it's full of blobs but don't worry!
 - name: (str) Looks like a path and filename.
     - "\._ $SHOWS\Show_0\filename.ext"
 - checksum: (int) Undetermined checksum. (Yet!)
+    - TODO: determine checksum type.
 - datalength: (int) Size of the uncompressed data blob in bytes.
 - content: blob
 
@@ -55,7 +56,8 @@ The general show informations as this section is always unique.
 
 #### Show
 - Name: (str) The show name.
-- activeCueList: (1) The cueListId of the currently active cueList.
+- activeCueList: (int) The cueListId of the currently active cueList.
+    - 1
 - notes: (str) Does not seem to be exposed on the mixing desk!
     - ""
 - deskType: (int) I have to find the other types.
@@ -73,6 +75,28 @@ The general show informations as this section is always unique.
 - notes: (str) Does not seem to be exposed on the mixing desk!
     - ""
 
+### CueList
+- cueListId: (int)
+    - 1
+- name: (str)
+    - "Cue List 1"
+- nextCueId: (int) ID for the next created cue.
+- notes: (str)
+    - ""
+
+### Filter
+Optional.
+
+Isolate statuses.
+
+### Scope
+Optional.
+
+- category: (int)
+    - TODO: determine categories
+- mask: (int)
+    - TODO: determine mask relationship
+
 #### Cue
 - cueId: (int) An ID for the cue.
 - snapshotId: (int) Binds the cue to a snapshot.
@@ -83,8 +107,8 @@ The general show informations as this section is always unique.
 - midiChannel: (int) The MIDI channel onto which sending the program change.
 - midiProgNumber: (int) The MIDI program change message number.
 - midiRxChannel: (int) The MIDI channel onto which receiving program changes.
-- midiRxProgChange: (int?) Enables cue recall on MIDI progam change reception. Oddly, off value is 16.
-- midiRxProgNumber: (int) The MIDI program change message number.
+- midiRxProgChange: (int) The MIDI program change message number. Yeah, someone mixed up this setting and the next!
+- midiRxProgNumber: (bool as int) Enables cue recall on MIDI progam change reception. Yeah, someone mixed up this setting and the previous!
 - hiQVenueRecall: (bool as int) Enables recalling HiQnet venue on cue recall.
 - hiQVenueNumber: (int) The HiQnet venue number to recall.
 - cueActive: (bool as int?) Does not seem to be exposed on the mixing desk!
