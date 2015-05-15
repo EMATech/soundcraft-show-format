@@ -24,7 +24,7 @@ Unfortunately it's full of blobs but don't worry!
 - name: (str) Looks like a path and filename.
     - "\._ $SHOWS\Show_0\filename.ext"
 - checksum: (int) Undetermined checksum. (Yet!)
-- datalength: (int) Size of the uncompressed data blob in bytes. (Except it's wrong for the SS_xxxxx.dat file).
+- datalength: (int) Size of the uncompressed data blob in bytes.
 - content: blob
 
 ## Blobs
