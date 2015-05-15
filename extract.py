@@ -2,16 +2,18 @@
 # -*- coding: utf-8 -*-
 """A CLI tool to extract Soundcraft Show files"""
 
+from __future__ import print_function
+
 __author__ = 'Raphaël Doursenaud'
 
 import argparse
 import sys
-
-from bs4 import BeautifulSoup
 from base64 import b64decode
 from zlib import decompress
 from os.path import basename, splitext, join, exists
 from os import mkdir
+
+from bs4 import BeautifulSoup
 
 parser = argparse.ArgumentParser(description="Extract Soundcraft Show files.")
 parser.add_argument('infiles', metavar="INFILE", type=argparse.FileType('r'),
@@ -27,7 +29,7 @@ for file in args.infiles:
     collection = soup('MHxDFile')
     size = len(collection)
     outfilepath = basename(file.name)
-    
+
     # Remove extension
     outfilepath = splitext(outfilepath)[0]
 
@@ -50,7 +52,11 @@ for file in args.infiles:
         contents = entry.contents[0]
 
         # Base64 decode
-        contents = b64decode(contents, validate=True)
+        try:
+            contents = b64decode(contents, validate=True)
+        except TypeError:
+            # We're most likely running python 2, let's try without validate
+            contents = b64decode(contents)
 
         # zlib decompress
         contents = decompress(contents)
@@ -70,5 +76,3 @@ for file in args.infiles:
         fh = open(outfile, 'wb')
         fh.write(contents)
         fh.close()
-
-
