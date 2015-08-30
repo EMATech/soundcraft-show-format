@@ -70,9 +70,8 @@ for file in args.infiles:
         outfile = join(outfilepath, filename)
         if exists(outfile):
             answer = input("File " + outfile + " already exists! Overwrite? [y/N]")
-            if not (answer == 'Y' or answer == 'y'):
+            if not answer in ['Y', 'y']:
                 print("Skipping…")
                 continue
-        fh = open(outfile, 'wb')
-        fh.write(contents)
-        fh.close()
+        with open(outfile, 'wb') as fh:
+            fh.write(contents)
