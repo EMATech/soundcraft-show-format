@@ -1,0 +1,7 @@
+<Show name="02 KAPLNKA" activeCueList="1" notes="" deskType="97" versionMajor="1" versionMinor="6" build="8">
+  <CueList cuelistId="1" name="Cue list 1" nextCueId="100" notes="">
+    <Filter>
+      <Scope category="1" mask="512" />
+    </Filter>
+  </CueList>
+</Show>

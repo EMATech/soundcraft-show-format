@@ -1,0 +1,105 @@
+<IOModuleDatabase>
+  <PhysicalIODeviceManager>
+    <PhysicalIODevice shortName="MIC" description="MIC" serialNo="39030" versionNo="256" position="255" expansionCardType="0" moduleType="1" internalModuleType="1">
+      <InternalAudioDevice shortName="" description="" serialNo="4660" audioDeviceType="1">
+        <AudioIOModuleRangeManager>
+          <AudioIOModuleRange logicalStart="0" logicalEnd="23" IOmoduleType="1" logicalIOType="1" discovered="1" inShow="1" eAvailable="1" />
+        </AudioIOModuleRangeManager>
+      </InternalAudioDevice>
+    </PhysicalIODevice>
+    <PhysicalIODevice shortName="MIC" description="MIC" serialNo="39030" versionNo="256" position="255" expansionCardType="0" moduleType="1" internalModuleType="1">
+      <InternalAudioDevice shortName="" description="" serialNo="4660" audioDeviceType="1">
+        <AudioIOModuleRangeManager>
+          <AudioIOModuleRange logicalStart="24" logicalEnd="63" IOmoduleType="1" logicalIOType="1" discovered="0" inShow="1" eAvailable="0" />
+        </AudioIOModuleRangeManager>
+      </InternalAudioDevice>
+    </PhysicalIODevice>
+    <PhysicalIODevice shortName="LINE IN" description="Line Input Module" serialNo="39030" versionNo="256" position="255" expansionCardType="0" moduleType="1" internalModuleType="2">
+      <InternalAudioDevice shortName="" description="" serialNo="4660" audioDeviceType="1">
+        <AudioIOModuleRangeManager>
+          <AudioIOModuleRange logicalStart="0" logicalEnd="3" IOmoduleType="1" logicalIOType="2" discovered="1" inShow="1" eAvailable="1" />
+        </AudioIOModuleRangeManager>
+      </InternalAudioDevice>
+    </PhysicalIODevice>
+    <PhysicalIODevice shortName="LINE IN" description="Line Input Module" serialNo="39030" versionNo="256" position="255" expansionCardType="0" moduleType="1" internalModuleType="2">
+      <InternalAudioDevice shortName="" description="" serialNo="4660" audioDeviceType="1">
+        <AudioIOModuleRangeManager>
+          <AudioIOModuleRange logicalStart="4" logicalEnd="7" IOmoduleType="1" logicalIOType="2" discovered="0" inShow="1" eAvailable="0" />
+        </AudioIOModuleRangeManager>
+      </InternalAudioDevice>
+    </PhysicalIODevice>
+    <PhysicalIODevice shortName="LEX-RT" description="Lexicon Return Module" serialNo="39030" versionNo="256" position="255" expansionCardType="0" moduleType="1" internalModuleType="2">
+      <InternalAudioDevice shortName="" description="" serialNo="4660" audioDeviceType="1">
+        <AudioIOModuleRangeManager>
+          <AudioIOModuleRange logicalStart="0" logicalEnd="7" IOmoduleType="1" logicalIOType="3" discovered="1" inShow="1" eAvailable="1" />
+        </AudioIOModuleRangeManager>
+      </InternalAudioDevice>
+    </PhysicalIODevice>
+    <PhysicalIODevice shortName="AES In" description="AES Input Module" serialNo="39030" versionNo="256" position="255" expansionCardType="0" moduleType="1" internalModuleType="5">
+      <InternalAudioDevice shortName="" description="" serialNo="4660" audioDeviceType="1">
+        <AudioIOModuleRangeManager>
+          <AudioIOModuleRange logicalStart="0" logicalEnd="1" IOmoduleType="1" logicalIOType="5" discovered="1" inShow="1" eAvailable="1" />
+        </AudioIOModuleRangeManager>
+      </InternalAudioDevice>
+    </PhysicalIODevice>
+    <PhysicalIODevice shortName="O/P" description="GRAUX Output Module" serialNo="39030" versionNo="256" position="255" expansionCardType="0" moduleType="1" internalModuleType="3">
+      <InternalAudioDevice shortName="" description="" serialNo="4660" audioDeviceType="1">
+        <AudioIOModuleRangeManager>
+          <AudioIOModuleRange logicalStart="0" logicalEnd="15" IOmoduleType="1" logicalIOType="8" discovered="1" inShow="1" eAvailable="1" />
+        </AudioIOModuleRangeManager>
+      </InternalAudioDevice>
+    </PhysicalIODevice>
+    <PhysicalIODevice shortName="AES Out" description="AES Output Module" serialNo="39030" versionNo="256" position="255" expansionCardType="0" moduleType="1" internalModuleType="6">
+      <InternalAudioDevice shortName="" description="" serialNo="4660" audioDeviceType="1">
+        <AudioIOModuleRangeManager>
+          <AudioIOModuleRange logicalStart="0" logicalEnd="1" IOmoduleType="1" logicalIOType="17" discovered="1" inShow="1" eAvailable="1" />
+        </AudioIOModuleRangeManager>
+      </InternalAudioDevice>
+    </PhysicalIODevice>
+    <PhysicalIODevice shortName="MADI" description="MADI IN/OUT CARD" serialNo="39030" versionNo="256" position="0" expansionCardType="2" moduleType="2" internalModuleType="0">
+      <UnknownExternalAudioDevice shortName="" description="" serialNo="4660" audioDeviceType="5">
+        <AudioIOModuleRangeManager>
+          <AudioIOModuleRange logicalStart="0" logicalEnd="7" IOmoduleType="2" logicalIOType="4" discovered="1" inShow="1" eAvailable="0" />
+          <AudioIOModuleRange logicalStart="0" logicalEnd="7" IOmoduleType="2" logicalIOType="12" discovered="1" inShow="1" eAvailable="1" />
+          <AudioIOModuleRange logicalStart="8" logicalEnd="15" IOmoduleType="2" logicalIOType="4" discovered="1" inShow="1" eAvailable="0" />
+          <AudioIOModuleRange logicalStart="8" logicalEnd="15" IOmoduleType="2" logicalIOType="12" discovered="1" inShow="1" eAvailable="1" />
+          <AudioIOModuleRange logicalStart="16" logicalEnd="31" IOmoduleType="2" logicalIOType="4" discovered="1" inShow="1" eAvailable="0" />
+          <AudioIOModuleRange logicalStart="16" logicalEnd="31" IOmoduleType="2" logicalIOType="12" discovered="1" inShow="1" eAvailable="1" />
+          <AudioIOModuleRange logicalStart="32" logicalEnd="63" IOmoduleType="2" logicalIOType="4" discovered="1" inShow="1" eAvailable="0" />
+          <AudioIOModuleRange logicalStart="32" logicalEnd="63" IOmoduleType="2" logicalIOType="12" discovered="1" inShow="1" eAvailable="1" />
+        </AudioIOModuleRangeManager>
+      </UnknownExternalAudioDevice>
+    </PhysicalIODevice>
+    <PhysicalIODevice shortName="STAGE BOX @ SLOT 1" description="D21M STAGE BOX" serialNo="39030" versionNo="256" position="0" expansionCardType="0" moduleType="3" internalModuleType="0">
+      <D21StageRack shortName="" description="" serialNo="4660" audioDeviceType="2">
+        <StageRackCardManager>
+          <StageRackCard SRposition="0" SRcardType="41" SRcardName="COMPACT/MINI ANALOGUE MIC/LINE IN">
+            <AudioIOModuleRangeManager>
+              <AudioIOModuleRange logicalStart="0" logicalEnd="7" IOmoduleType="3" logicalIOType="6" discovered="0" inShow="1" eAvailable="1" />
+            </AudioIOModuleRangeManager>
+          </StageRackCard>
+          <StageRackCard SRposition="0" SRcardType="41" SRcardName="COMPACT/MINI ANALOGUE MIC/LINE IN">
+            <AudioIOModuleRangeManager>
+              <AudioIOModuleRange logicalStart="8" logicalEnd="15" IOmoduleType="3" logicalIOType="6" discovered="0" inShow="1" eAvailable="1" />
+            </AudioIOModuleRangeManager>
+          </StageRackCard>
+          <StageRackCard SRposition="2" SRcardType="41" SRcardName="COMPACT/MINI ANALOGUE MIC/LINE IN">
+            <AudioIOModuleRangeManager>
+              <AudioIOModuleRange logicalStart="16" logicalEnd="31" IOmoduleType="3" logicalIOType="6" discovered="0" inShow="1" eAvailable="1" />
+            </AudioIOModuleRangeManager>
+          </StageRackCard>
+          <StageRackCard SRposition="4" SRcardType="46" SRcardName="COMPACT/MINI ANALOGUE LINE/AES OUT">
+            <AudioIOModuleRangeManager>
+              <AudioIOModuleRange logicalStart="0" logicalEnd="7" IOmoduleType="3" logicalIOType="13" discovered="0" inShow="1" eAvailable="1" />
+            </AudioIOModuleRangeManager>
+          </StageRackCard>
+          <StageRackCard SRposition="4" SRcardType="46" SRcardName="COMPACT/MINI ANALOGUE LINE/AES OUT">
+            <AudioIOModuleRangeManager>
+              <AudioIOModuleRange logicalStart="8" logicalEnd="15" IOmoduleType="3" logicalIOType="14" discovered="0" inShow="1" eAvailable="1" />
+            </AudioIOModuleRangeManager>
+          </StageRackCard>
+        </StageRackCardManager>
+      </D21StageRack>
+    </PhysicalIODevice>
+  </PhysicalIODeviceManager>
+</IOModuleDatabase>
