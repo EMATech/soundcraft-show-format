@@ -62,6 +62,7 @@ The general show informations as this section is always unique.
     - ""
 - deskType: (int) I have to find the other types.
     - 12 == Si Compact 16
+    - 97 == Si Expression 2
 - versionMajor: (int) The major version number of the firmware.
     - 3
 - versionMinor: (int) The minor version number of the firmware.
@@ -135,13 +136,14 @@ Looks like the routing informations for the Show.
     - 255 for internal.
     - 0 for external.
 - expansionCardType: (int)
-    - O for internal.
-    - 2 for my MULTI DIGITAL card.
+    - 0 for internal and D21m stagebox.
+    - 2 for MULTI DIGITAL and MADI cards.
 - moduleType: (int)
     - 1 for internal.
-    - 2 for my MULTI DIGITAL card.
+    - 2 for MULTI DIGITAL and MADI cards.
+    - 3 for D21m stagebox.
 - internalModuleType: (int)
-    - 0 for my MULTI DIGITAL card.
+    - 0 for MULTI DIGITAL and MADI cards and D21m stagebox.
     - 1 for MIC.
     - 2 for Line and internal Lexicon return.
     - 3 for GRAUX output module.
@@ -167,12 +169,15 @@ Looks like the routing informations for the Show.
 - IOmoduleType: (int)
     - 1 for all internal.
     - 2 for my external MULTI DIGITAL card.
+    - 3 for D21m stagebox cards.
 - logicalIOType: (int)
     - 1 for MIC inputs.
     - 2 for Line inputs.
     - 3 for Internal Lexicon return.
     - 5 for AES input.
+    - 6 for MIC/Line In from D21m stagebox.
     - 8 for GRAUX output module.
+    - 13 and 14 for Line/AES Out from D21m stagebox.
     - 17 for AES output.
     - 4 for external inputs ?
     - 12 for external outputs ?
